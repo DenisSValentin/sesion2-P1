@@ -1,7 +1,9 @@
+#include "VisitanteAbstracta.cpp"
+
 class TextoDocumento : public DocumentoAbstracta{
 
     public:
-        void accept(Visitante visitante) override{
+        void accept(VisitanteAbstracta visitante) override{
             return visitante.cambiaFuente(this);
         }
         

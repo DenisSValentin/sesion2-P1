@@ -1,4 +1,4 @@
-class VisitanteImagenes{
+class VisitanteImagenes : public VisitanteAbstracta{
 
     public: 
 

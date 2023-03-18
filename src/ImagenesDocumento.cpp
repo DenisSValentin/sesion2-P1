@@ -1,8 +1,11 @@
+#include "DocumentoAbstracta.cpp"
+#include "VisitanteAbstracta.cpp"
+
 class ImagenesDocumento : public DocumentoAbstracta{
 
     public:
-        void accept(Visitante visitante) override{
-            return visitante.calculaNumImagenes(this);
+        void accept(VisitanteAbstracta visitante) override{
+            visitante.calculaNumImagenes(this);
         }
         
         int getNumImagenes(){

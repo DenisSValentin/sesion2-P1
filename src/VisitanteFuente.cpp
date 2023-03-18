@@ -1,4 +1,4 @@
-class VisitanteFuente{
+class VisitanteFuente : public VisitanteAbstracta{
 
     public:
 

@@ -1,8 +1,10 @@
+#include "DocumentoAbstracta.cpp"
+
 class VisitanteAbstracta{
 
     public:
 
-        int calculaNumImagenes(DocumentoAbstracta documento);
+        virtual int calculaNumImagenes(DocumentoAbstracta documento);
 
-        void cambiaFuente(DocumentoAbstracta documento);
+        virtual void cambiaFuente(DocumentoAbstracta documento);
 };
