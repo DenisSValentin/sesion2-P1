@@ -1,30 +1,34 @@
-//#include <iostream>
-#include "Documento.h"
-#include "DocumentoImagen.h"
-#include "DocumentoTexto.h"
-#include "Visitante.h"
-#include "VisitanteNumImagenes.h"
-#include "VisitanteFuenteTex.h"
+#include <iostream>
 
 using namespace std;
 
 int main(){
 
-    VisitanteNumImg vI;
-    VisitanteFuenteTex vT;
-    DocumentoImagen imagen;
-    DocumentoTexto texto;
+    VisitanteDescuento50 v50;
+    VisitanteDescuento33 v33;
+    ProductoCafe cafe;
+    ProductoJamon jamon;
+    ProductoQueso queso;
 
-    cout << imagen.toString() << endl;
-    cout << texto.toString() << endl;
+    cout << cafe.toString() << endl;
+    cout << jamon.toString() << endl;
+    cout << queso.toString() << endl;
 
-    imagen.accept(vI);
-    imagen.accept(vT);
-    texto.accept(vI);
-    texto.accept(vT);
+    cafe.accept(v50);
+    jamon.accept(v50);
+    queso.accept(v50);
 
-    cout << imagen.toString() << endl;
-    cout << texto.toString() << endl;
+    cout << cafe.toString() << endl;
+    cout << jamon.toString() << endl;
+    cout << queso.toString() << endl;
 
+    cafe.accept(v33);
+    jamon.accept(v33);
+    queso.accept(v33);
+
+    cout << cafe.toString() << endl;
+    cout << jamon.toString() << endl;
+    cout << queso.toString() << endl;
+    
     return 0;
 }

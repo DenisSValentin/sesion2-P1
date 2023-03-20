@@ -1,12 +1,12 @@
-#include "DocumentoImagen.h"
-#include "DocumentoTexto.h"
 
 class Visitante {
     
     public:
      
-     virtual void visitarDocImg(DocumentoImagen img);
+        virtual void visitarProductoCafe(ProductosCafe cafe);
 
-     virtual void visitarDocTex(DocumentoTexto texto);
+        virtual void visitarProductoJamon(ProductosJamon jamon);
+
+        virtual void visitarProductoQueso(ProductosQueso queso);
 
 };
